@@ -1,28 +1,28 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './Style/App.css';
+import AllLights from './Pages/Dashboard/AllLights';
+import LightInfo from './Pages/Dashboard/LightInfo';
+import {connect} from 'react-redux'
+import {getLights} from './Redux/actions';
+import Divider from './Components/Divider';
 
 class App extends Component {
+
+  componentDidMount() {
+    this.props.getLights()
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <div className="container">
+          <AllLights /> 
+          <Divider dir="ver" size="100vh"/>
+          <LightInfo />
+        </div>
       </div>
     );
   }
 }
 
-export default App;
+export default connect(null, {getLights})(App);

@@ -1,0 +1,112 @@
+.infoContainer {
+    padding: 50px 0;
+    background-color: white;
+    width: 100%;
+}
+
+.grey {
+    color: rgb(172, 172, 172);
+}
+
+.infoContainer p {
+    font-size: bold;
+}
+
+.infoContainer h1 {
+    margin-top: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.header img {
+    float: right;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.date {
+    font-size: 20px;
+}
+
+.infoCardsContainer {
+    display: grid;
+    grid-auto-flow: column;
+    padding: 50px;
+    grid-column-gap: 50px;
+    grid-auto-columns: 1fr;
+}
+
+.brightnessCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.brightnessCardHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.brightnessCard p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.brightnessFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.brightnessFooter h1 {
+    margin-bottom: 10px;
+}
+
+.rangeContainer {
+    width: 80%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.input-range__label-container {
+    display: none;
+}
+
+.effectCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.effectCard p {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.buttonContainer {
+    margin-bottom: 20px;
+}
+
+.buttonContainer > div {
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 10px 0;
+}

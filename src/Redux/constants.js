@@ -1,0 +1,2 @@
+export const GET_LIGHTS = "GET_LIGHTS";
+export const SET_CURRENT_LIGHT = "SET_CURRENT_LIGHT";

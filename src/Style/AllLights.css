@@ -1,0 +1,54 @@
+.lightsContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    width: 30%;
+    height: calc(100vh - 100px);
+    padding: 50px;
+    overflow-y: scroll;
+}
+
+.lightsContainer input {
+    padding: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: rgb(239, 239, 243);
+}
+
+.light {
+    margin: 20px 0;
+    background-color: white;
+    border: 1px solid rgb(239, 239, 243);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.light h3 {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.description p {
+    margin-bottom: 15px;
+    color: rgb(136, 136, 136);
+}
+
+.color {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
