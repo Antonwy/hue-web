@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "aceb4f2d8df76d65d14b",
+    "revision": "5800583e4ad1201f7623",
     "url": "/hue-web/static/css/main.8032898b.chunk.css"
   },
   {
-    "revision": "aceb4f2d8df76d65d14b",
-    "url": "/hue-web/static/js/main.aceb4f2d.chunk.js"
+    "revision": "5800583e4ad1201f7623",
+    "url": "/hue-web/static/js/main.5800583e.chunk.js"
   },
   {
     "revision": "e7826033595328100e14",
@@ -36,7 +36,7 @@ self.__precacheManifest = [
     "url": "/hue-web/static/media/user-icon.5f1d8645.svg"
   },
   {
-    "revision": "bcae568e8e28d4e84a456e76fbe9c68e",
+    "revision": "a5110b52382086bc2a09607cb2352e10",
     "url": "/hue-web/index.html"
   }
 ];

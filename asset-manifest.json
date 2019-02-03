@@ -1,7 +1,7 @@
 {
   "main.css": "/hue-web/static/css/main.8032898b.chunk.css",
-  "main.js": "/hue-web/static/js/main.aceb4f2d.chunk.js",
-  "main.js.map": "/hue-web/static/js/main.aceb4f2d.chunk.js.map",
+  "main.js": "/hue-web/static/js/main.5800583e.chunk.js",
+  "main.js.map": "/hue-web/static/js/main.5800583e.chunk.js.map",
   "static/css/1.d83c380e.chunk.css": "/hue-web/static/css/1.d83c380e.chunk.css",
   "static/js/1.e7826033.chunk.js": "/hue-web/static/js/1.e7826033.chunk.js",
   "static/js/1.e7826033.chunk.js.map": "/hue-web/static/js/1.e7826033.chunk.js.map",
@@ -11,9 +11,9 @@
   "static/media/email-icon.svg": "/hue-web/static/media/email-icon.d896ae60.svg",
   "static/media/reload-icon.svg": "/hue-web/static/media/reload-icon.4a4436aa.svg",
   "static/media/user-icon.svg": "/hue-web/static/media/user-icon.5f1d8645.svg",
-  "static/css/1.d83c380e.chunk.css.map": "/hue-web/static/css/1.d83c380e.chunk.css.map",
   "static/css/main.8032898b.chunk.css.map": "/hue-web/static/css/main.8032898b.chunk.css.map",
+  "static/css/1.d83c380e.chunk.css.map": "/hue-web/static/css/1.d83c380e.chunk.css.map",
   "index.html": "/hue-web/index.html",
-  "precache-manifest.c92d5aa0c65aad4956892fb139b5adaf.js": "/hue-web/precache-manifest.c92d5aa0c65aad4956892fb139b5adaf.js",
+  "precache-manifest.4f801bdedb66587c8f43f6943ed92362.js": "/hue-web/precache-manifest.4f801bdedb66587c8f43f6943ed92362.js",
   "service-worker.js": "/hue-web/service-worker.js"
 }
