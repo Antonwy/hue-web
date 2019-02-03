@@ -9,12 +9,16 @@ import thunk from 'redux-thunk'
 import {createLogger} from 'redux-logger'
 
 import {lights, currentLight} from './Redux/reducers';
+import {user} from './Redux/userReducers';
+import { reducer as formReducer } from 'redux-form'
 
 const logger = createLogger();
 
 const rootReducer = combineReducers({
     lights,
-    currentLight
+    currentLight,
+    form: formReducer,
+    user
 })
 
 const store = createStore(rootReducer, applyMiddleware(thunk, logger));

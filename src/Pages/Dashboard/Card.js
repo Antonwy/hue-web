@@ -1,5 +1,11 @@
 import React from 'react'
+import posed from 'react-pose';
 
+
+const Container = posed.div({
+  visible: {scale: 1, opacity: 1},
+  hidden: {scale: 0, opacity: 0}
+})
 
 const cardStyle = {
   height: 200,
@@ -9,9 +15,9 @@ const cardStyle = {
 
 const Card = ({children, className}) => {
   return (
-    <div className={className} style={cardStyle}>
+    <Container className={className} style={cardStyle}>
       {children}
-    </div>
+    </Container>
   )
 }
 

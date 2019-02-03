@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import './Style/App.css';
-import AllLights from './Pages/Dashboard/AllLights';
-import LightInfo from './Pages/Dashboard/LightInfo';
 import {connect} from 'react-redux'
 import {getLights} from './Redux/actions';
-import Divider from './Components/Divider';
+import Dashboard from './Pages/Dashboard/Dashboard';
+
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Register from './Pages/Register/Register';
+import LandingPage from './Pages/HomePage/LandingPage';
 
 class App extends Component {
 
@@ -14,13 +16,13 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <div className="container">
-          <AllLights /> 
-          <Divider dir="ver" size="100vh"/>
-          <LightInfo />
+      <Router basename={process.env.PUBLIC_URL + "#/"}>
+        <div>
+          <Route exact path="/" component={LandingPage} />
+          <Route path="/dashboard" component={Dashboard} />
+          <Route path="/register" component={Register} />
         </div>
-      </div>
+      </Router>
     );
   }
 }

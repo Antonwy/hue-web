@@ -9,6 +9,11 @@ import {connect} from 'react-redux';
 import {toggleLight, setBrightness, setAlert, setEffect} from '../../Redux/actions'
 import Divider from '../../Components/Divider';
 
+const Container = posed.div({
+  visible: {staggerChildren: 250},
+  hidden: {}
+})
+
 const AlertButton = posed.div({
   alert: {backgroundColor: "rgb(244, 66, 92)", scale: 1.2},
   noAlert: {backgroundColor: "rgb(66, 83, 175)", scale: 1}
@@ -24,19 +29,23 @@ class InfoCards extends React.Component {
   state={
     sliderValue: 0,
     alert: false,
-    colorLoop: false
+    colorLoop: false,
+    animate: false
+  }
+
+  componentDidMount() {
+    this.setState({animate: true})
   }
 
   componentDidUpdate(prevProps) {
     const {light} = this.props;
     const bri = light.state === undefined ? 0 : Math.round(light.state.bri / 254 * 100);
     if (prevProps.light !== light) {
-      console.log("NOOW")
       this.setState({
         sliderValue: bri,
         alert: light.state.alert === "lselect" || light.state.alert === "select" ? true : false,
-        colorLoop: light.state.effect === "colorloop" ? true : false
-      });
+        colorLoop: light.state.effect === "colorloop" ? true : false,
+      })
     }
   }
 
@@ -63,9 +72,9 @@ class InfoCards extends React.Component {
 
   render(){
     const {light} = this.props;
-    const {sliderValue, alert, colorLoop} = this.state;
+    const {sliderValue, alert, colorLoop, animate} = this.state;
     return (
-      <div className="infoCardsContainer">
+      <Container pose={animate ? "visible" : "hidden"} className="infoCardsContainer">
         <Card className="brightnessCard">
           <div className="brightnessCardHeader">
             <p>Brightness</p>
@@ -96,7 +105,7 @@ class InfoCards extends React.Component {
             <EffectButton pose={colorLoop ? 'loop' : 'noLoop'} onClick={this.handleEffect}>{colorLoop ? "Stop Colorloop" : "Start Colorloop"}</EffectButton>
           </div>
         </Card>
-      </div>
+      </Container>
     )
   }
 }

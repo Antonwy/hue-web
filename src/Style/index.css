@@ -9,4 +9,5 @@ body {
     background-color: rgb(245, 245, 247);
     color: rgb(22, 22, 22);
     font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
 }

@@ -1,2 +1,4 @@
 export const GET_LIGHTS = "GET_LIGHTS";
 export const SET_CURRENT_LIGHT = "SET_CURRENT_LIGHT";
+export const REGISTER_USER = "REGISTER_USER";
+export const LOGIN_USER = "LOGIN_USER";
